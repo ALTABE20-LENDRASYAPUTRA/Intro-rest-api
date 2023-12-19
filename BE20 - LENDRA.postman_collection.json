@@ -1,0 +1,395 @@
+{
+	"info": {
+		"_postman_id": "77d0c055-0a26-41d4-8319-99536f039a9e",
+		"name": "BE20 - LENDRA",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "26247205"
+	},
+	"item": [
+		{
+			"name": "SWAPI",
+			"item": [
+				{
+					"name": "GET film",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://swapi.dev/api/films",
+							"protocol": "https",
+							"host": [
+								"swapi",
+								"dev"
+							],
+							"path": [
+								"api",
+								"films"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GET film by id",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://swapi.dev/api/films/3",
+							"protocol": "https",
+							"host": [
+								"swapi",
+								"dev"
+							],
+							"path": [
+								"api",
+								"films",
+								"3"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GET people",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://swapi.dev/api/people",
+							"protocol": "https",
+							"host": [
+								"swapi",
+								"dev"
+							],
+							"path": [
+								"api",
+								"people"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GET Species",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://swapi.dev/api/species",
+							"protocol": "https",
+							"host": [
+								"swapi",
+								"dev"
+							],
+							"path": [
+								"api",
+								"species"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GET planet",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://swapi.dev/api/planets",
+							"protocol": "https",
+							"host": [
+								"swapi",
+								"dev"
+							],
+							"path": [
+								"api",
+								"planets"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "NEWSAPI",
+			"item": [
+				{
+					"name": "GET All articles about Bitcoin",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://newsapi.org/v2/everything?q=bitcoin&apiKey=c32e55524d6048a49928ba70bfa3d872",
+							"protocol": "https",
+							"host": [
+								"newsapi",
+								"org"
+							],
+							"path": [
+								"v2",
+								"everything"
+							],
+							"query": [
+								{
+									"key": "q",
+									"value": "bitcoin"
+								},
+								{
+									"key": "apiKey",
+									"value": "c32e55524d6048a49928ba70bfa3d872"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GET All sources",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://newsapi.org/v2/top-headlines/sources?apiKey=c32e55524d6048a49928ba70bfa3d872",
+							"protocol": "https",
+							"host": [
+								"newsapi",
+								"org"
+							],
+							"path": [
+								"v2",
+								"top-headlines",
+								"sources"
+							],
+							"query": [
+								{
+									"key": "apiKey",
+									"value": "c32e55524d6048a49928ba70bfa3d872"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GET Top headlines from BBC News",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://newsapi.org/v2/top-headlines?sources=bbc-news&apiKey=c32e55524d6048a49928ba70bfa3d872",
+							"protocol": "https",
+							"host": [
+								"newsapi",
+								"org"
+							],
+							"path": [
+								"v2",
+								"top-headlines"
+							],
+							"query": [
+								{
+									"key": "sources",
+									"value": "bbc-news"
+								},
+								{
+									"key": "apiKey",
+									"value": "c32e55524d6048a49928ba70bfa3d872"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GET Top business headlines from Germany",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://newsapi.org/v2/top-headlines?country=de&category=business&apiKey=c32e55524d6048a49928ba70bfa3d872",
+							"protocol": "https",
+							"host": [
+								"newsapi",
+								"org"
+							],
+							"path": [
+								"v2",
+								"top-headlines"
+							],
+							"query": [
+								{
+									"key": "country",
+									"value": "de"
+								},
+								{
+									"key": "category",
+									"value": "business"
+								},
+								{
+									"key": "apiKey",
+									"value": "c32e55524d6048a49928ba70bfa3d872"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GET Top headlines in the US",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://newsapi.org/v2/top-headlines?country=us&apiKey=c32e55524d6048a49928ba70bfa3d872",
+							"protocol": "https",
+							"host": [
+								"newsapi",
+								"org"
+							],
+							"path": [
+								"v2",
+								"top-headlines"
+							],
+							"query": [
+								{
+									"key": "country",
+									"value": "us"
+								},
+								{
+									"key": "apiKey",
+									"value": "c32e55524d6048a49928ba70bfa3d872"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "SEPULSA",
+			"item": [
+				{
+					"name": "get user by id",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://virtserver.swaggerhub.com/sepulsa/RentABook-API/1.0.0/user/1",
+							"protocol": "https",
+							"host": [
+								"virtserver",
+								"swaggerhub",
+								"com"
+							],
+							"path": [
+								"sepulsa",
+								"RentABook-API",
+								"1.0.0",
+								"user",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "edit client by id",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"url": {
+							"raw": "https://virtserver.swaggerhub.com/sepulsa/RentABook-API/1.0.0/client/1",
+							"protocol": "https",
+							"host": [
+								"virtserver",
+								"swaggerhub",
+								"com"
+							],
+							"path": [
+								"sepulsa",
+								"RentABook-API",
+								"1.0.0",
+								"client",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "delete book by id",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "https://virtserver.swaggerhub.com/sepulsa/RentABook-API/1.0.0/book/1",
+							"protocol": "https",
+							"host": [
+								"virtserver",
+								"swaggerhub",
+								"com"
+							],
+							"path": [
+								"sepulsa",
+								"RentABook-API",
+								"1.0.0",
+								"book",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get all rent transaksi",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://virtserver.swaggerhub.com/sepulsa/RentABook-API/1.0.0/rent",
+							"protocol": "https",
+							"host": [
+								"virtserver",
+								"swaggerhub",
+								"com"
+							],
+							"path": [
+								"sepulsa",
+								"RentABook-API",
+								"1.0.0",
+								"rent"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "add client",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "https://virtserver.swaggerhub.com/sepulsa/RentABook-API/1.0.0/client",
+							"protocol": "https",
+							"host": [
+								"virtserver",
+								"swaggerhub",
+								"com"
+							],
+							"path": [
+								"sepulsa",
+								"RentABook-API",
+								"1.0.0",
+								"client"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
